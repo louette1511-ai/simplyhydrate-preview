@@ -7,31 +7,27 @@
 <meta name="description" content="Award winning alkaline water at pH 10, sparkling favourites, sports fuel, vitamins and dispensers. Premium hydration for the whole family, delivered to your door." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..600&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3C10 12 7 17 7 21a9 9 0 0 0 18 0c0-4-3-9-9-18z' fill='%2335e1e3'/%3E%3C/svg%3E" />
+<link rel="icon" href="assets/brand/favicon-s.png" />
 </head>
 <body>
 
-<!-- grain + caustic atmosphere layers -->
-<div class="grain" aria-hidden="true"></div>
+<div class="scrollbar" aria-hidden="true"><span id="scrollfill"></span></div>
 
 <!-- NAV -->
 <header class="nav" id="top">
   <a class="brand" href="#top" aria-label="Simply Hydrate home">
-    <span class="brand__drop" aria-hidden="true">
-      <svg viewBox="0 0 32 32"><path d="M16 3C10 12 7 17 7 21a9 9 0 0 0 18 0c0-4-3-9-9-18z"/></svg>
-    </span>
-    <span class="brand__name">Simply<em>Hydrate</em></span>
+    <img class="brand__logo" src="assets/brand/logo-clean.png" alt="Simply Hydrate, premium family hydration" />
   </a>
   <nav class="nav__links" aria-label="Primary">
     <a href="#range">The range</a>
+    <a href="#alkaline">pH 10</a>
     <a href="#specials">Specials</a>
     <a href="#dispensers">Dispensers</a>
-    <a href="#why">Why us</a>
     <a href="#contact">Contact</a>
   </nav>
-  <a class="btn btn--wa nav__cta" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+  <a class="btn btn--solid nav__cta" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
     <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2Zm5.1 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.8-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l1.8.9c.5.2.5.4.5.6 0 .1 0 .5-.1.9Z"/></svg>
     Order now
   </a>
@@ -40,62 +36,80 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero__bg" aria-hidden="true">
-    <span class="blob blob--1"></span>
-    <span class="blob blob--2"></span>
-    <span class="blob blob--3"></span>
-    <span class="caustic"></span>
+  <div class="hero__bubbles" aria-hidden="true">
+    <span style="--x:6%;--s:54px;--d:0s;--t:15s"></span>
+    <span style="--x:18%;--s:26px;--d:3s;--t:12s"></span>
+    <span style="--x:33%;--s:40px;--d:6s;--t:18s"></span>
+    <span style="--x:52%;--s:20px;--d:1s;--t:11s"></span>
+    <span style="--x:71%;--s:60px;--d:4s;--t:20s"></span>
+    <span style="--x:88%;--s:30px;--d:8s;--t:14s"></span>
+    <span style="--x:95%;--s:18px;--d:2s;--t:10s"></span>
   </div>
   <div class="hero__inner">
-    <p class="eyebrow reveal">Premium family hydration</p>
-    <h1 class="hero__title">
-      <span class="reveal" style="--d:.05s">Pure water,</span>
-      <span class="reveal" style="--d:.15s">the way your</span>
-      <span class="reveal hero__title-accent" style="--d:.25s">family deserves.</span>
-    </h1>
-    <p class="hero__lede reveal" style="--d:.4s">Award winning alkaline water at <strong>pH 10</strong>, sparkling favourites, sports fuel and dispensers. Clean, affordable, and delivered to your door.</p>
-    <div class="hero__cta reveal" style="--d:.55s">
-      <a class="btn btn--solid" href="#range">Explore the range</a>
-      <a class="btn btn--ghost btn--wa" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
-        <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2Zm5.1 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.8-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l1.8.9c.5.2.5.4.5.6 0 .1 0 .5-.1.9Z"/></svg>
-        Order on WhatsApp
-      </a>
+    <div class="hero__copy">
+      <p class="eyebrow reveal"><span class="eyebrow__dot"></span>Premium family hydration</p>
+      <h1 class="hero__title">
+        <span class="reveal" style="--d:.05s">Hydration the</span>
+        <span class="reveal" style="--d:.13s">whole family</span>
+        <span class="reveal hero__title-pop" style="--d:.21s">will love.</span>
+      </h1>
+      <p class="hero__lede reveal" style="--d:.34s">Award winning alkaline water at <strong>pH 10</strong>, sparkling favourites, sports fuel and dispensers. Clean, affordable, and delivered to your door.</p>
+      <div class="hero__cta reveal" style="--d:.46s">
+        <a class="btn btn--solid btn--lg" href="#range">Explore the range</a>
+        <a class="btn btn--soft btn--lg btn--wa" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+          <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2Zm5.1 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.8-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l1.8.9c.5.2.5.4.5.6 0 .1 0 .5-.1.9Z"/></svg>
+          Order on WhatsApp
+        </a>
+      </div>
+      <div class="hero__trust reveal" style="--d:.58s">
+        <div><b>pH 10</b><span>Alkaline ionised</span></div>
+        <div><b>3 yr</b><span>Shelf life</span></div>
+        <div><b>2024</b><span>Family founded</span></div>
+      </div>
     </div>
-    <div class="hero__stats reveal" style="--d:.7s">
-      <div><b>pH 10</b><span>Alkaline ionised</span></div>
-      <div><b>3 yr</b><span>Shelf life</span></div>
-      <div><b>2024</b><span>Family founded</span></div>
+
+    <div class="hero__art reveal" style="--d:.3s">
+      <div class="hero__photo">
+        <img src="assets/products/hero-bg.jpg" alt="A family laughing as they run through a garden sprinkler in the sun" />
+      </div>
+      <div class="hero__chip hero__chip--award" aria-hidden="true"><span class="dot"></span>Award winning pH 10</div>
+      <div class="hero__card" aria-hidden="true">
+        <img src="assets/products/designer-500ml.jpg" alt="" />
+        <div>
+          <b>Designer Water</b>
+          <span>Alkaline, pH 10</span>
+        </div>
+        <em>from R90</em>
+      </div>
     </div>
   </div>
-  <div class="hero__product reveal" style="--d:.45s" aria-hidden="true">
-    <img src="assets/products/designer-500ml.jpg" alt="" loading="eager" />
-    <span class="hero__product-glow"></span>
-  </div>
-  <a class="scroll-hint" href="#about" aria-label="Scroll down"><span></span></a>
+  <svg class="hero__wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C 240 110 480 110 720 70 C 960 30 1200 30 1440 70 L1440 120 L0 120 Z" fill="var(--paper)"/></svg>
 </section>
 
 <!-- TRUST MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee__track">
-    <span>pH 10 alkaline</span><i>•</i><span>3 year shelf life</span><i>•</i><span>Family owned</span><i>•</i><span>Bulk &amp; wholesale</span><i>•</i><span>Delivery available</span><i>•</i><span>Heart &amp; Diabetic Foundation approved</span><i>•</i>
-    <span>pH 10 alkaline</span><i>•</i><span>3 year shelf life</span><i>•</i><span>Family owned</span><i>•</i><span>Bulk &amp; wholesale</span><i>•</i><span>Delivery available</span><i>•</i><span>Heart &amp; Diabetic Foundation approved</span><i>•</i>
+    <span>pH 10 alkaline</span><i>●</i><span>3 year shelf life</span><i>●</i><span>Family owned</span><i>●</i><span>Bulk &amp; wholesale</span><i>●</i><span>Delivery available</span><i>●</i><span>Heart &amp; Diabetic Foundation approved</span><i>●</i>
+    <span>pH 10 alkaline</span><i>●</i><span>3 year shelf life</span><i>●</i><span>Family owned</span><i>●</i><span>Bulk &amp; wholesale</span><i>●</i><span>Delivery available</span><i>●</i><span>Heart &amp; Diabetic Foundation approved</span><i>●</i>
   </div>
 </div>
 
 <!-- ABOUT -->
 <section class="about" id="about">
-  <div class="about__media reveal">
-    <img src="assets/products/bottles-rows.jpg" alt="Cases of Simply Hydrate purified water ready for delivery" loading="lazy" />
-    <div class="about__badge"><b>Est.</b><span>Feb 2024</span></div>
-  </div>
   <div class="about__copy">
     <p class="kicker reveal">The Simply Hydrate story</p>
     <h2 class="reveal" style="--d:.1s">Premium hydration that every family can actually afford.</h2>
     <p class="reveal" style="--d:.2s">We launched in 2024 with one belief: that clean, high quality water and healthy hydration should never be a luxury. So we put award winning alkaline water, trusted brands and honest pricing under one roof, for the whole family.</p>
-    <p class="reveal" style="--d:.3s">From pH 10 Designer water with a shelf life of over three years, to sugar free options approved by the Heart and Diabetic Foundation, every product earns its place. Order in seconds, save more in bulk, and we will bring it to your door.</p>
+    <p class="reveal" style="--d:.3s">From pH 10 Designer water with a shelf life of over three years, to sugar free options approved by the Heart and Diabetic Foundation, every product earns its place. Order in seconds, save more in bulk, and we bring it to your door.</p>
     <a class="link-arrow reveal" style="--d:.4s" href="#range">See the full range
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
+  </div>
+  <div class="about__panels">
+    <div class="stat reveal"><b>9+</b><span>Water brands stocked</span></div>
+    <div class="stat reveal" style="--d:.1s"><b>pH 10</b><span>Award winning alkaline</span></div>
+    <div class="stat reveal" style="--d:.2s"><b>3 yr</b><span>Certified shelf life</span></div>
+    <div class="stat stat--accent reveal" style="--d:.3s"><b>To your door</b><span>Delivery available</span></div>
   </div>
 </section>
 
@@ -104,37 +118,64 @@
   <div class="section-head">
     <p class="kicker reveal">The range</p>
     <h2 class="reveal" style="--d:.1s">Everything your family drinks, done properly.</h2>
-    <p class="section-sub reveal" style="--d:.2s">Tap any product to order it on WhatsApp in one message.</p>
+    <p class="section-sub reveal" style="--d:.2s">Slide through the shelf, then tap any product to order it on WhatsApp in one message.</p>
   </div>
 
-  <div class="band">
-    <div class="band__head reveal">
-      <h3>Waters</h3>
-      <p>Alkaline, still, sparkling and flavoured. Our Designer alkaline water is award winning at pH 10, and Pure Safe still is certified with a 3 year shelf life.</p>
+  <div class="catblock" id="waters">
+    <div class="catblock__head reveal">
+      <div><p class="kicker">01 / Waters</p><h3>Alkaline, still, sparkling &amp; flavoured</h3></div>
+      <div class="railnav"><button class="railbtn" data-dir="-1" aria-label="Scroll left">&#8249;</button><button class="railbtn" data-dir="1" aria-label="Scroll right">&#8250;</button></div>
     </div>
-    <div class="grid" data-cat="water"></div>
+    <div class="rail" data-cat="water"></div>
+  </div>
+</section>
+
+<!-- FEATURE: pH 10 -->
+<section class="feature" id="alkaline">
+  <div class="feature__inner">
+    <div class="feature__media reveal">
+      <span class="feature__ring" aria-hidden="true"></span>
+      <img src="assets/products/designer-330ml.jpg" alt="Designer alkaline ionised water at pH 10" loading="lazy" />
+    </div>
+    <div class="feature__copy">
+      <p class="kicker reveal">Our signature</p>
+      <h2 class="reveal" style="--d:.1s">pH 10 alkaline. The water that started it all.</h2>
+      <p class="reveal" style="--d:.2s">Designer Water is our award winning alkaline ionised water, balanced at a smooth pH 10 and certified with a shelf life of more than three years. Crisp, clean and made for the whole family to drink all day.</p>
+      <ul class="feature__marks reveal" style="--d:.3s">
+        <li>Award winning</li><li>Certified</li><li>3 year shelf life</li>
+      </ul>
+      <div class="feature__cta reveal" style="--d:.4s">
+        <span class="feature__from">from <b>R90</b></span>
+        <a class="btn btn--solid btn--wa" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20to%20order%20Designer%20alkaline%20water." target="_blank" rel="noopener">
+          <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2Zm5.1 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.8-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l1.8.9c.5.2.5.4.5.6 0 .1 0 .5-.1.9Z"/></svg>
+          Order Designer water
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RANGE continued -->
+<section class="range range--tail">
+  <div class="catblock catblock--right" id="beverages">
+    <div class="catblock__head reveal">
+      <div><p class="kicker">02 / Beverages &amp; snacks</p><h3>Zero sugar sports drinks &amp; fuel</h3></div>
+      <div class="railnav"><button class="railbtn" data-dir="-1" aria-label="Scroll left">&#8249;</button><button class="railbtn" data-dir="1" aria-label="Scroll right">&#8250;</button></div>
+    </div>
+    <div class="rail" data-cat="beverage"></div>
   </div>
 
-  <div class="band band--alt">
-    <div class="band__head reveal">
-      <h3>Beverages &amp; snacks</h3>
-      <p>Zero sugar sports drinks, energising fuel bars and feel good treats. Low calorie, big on flavour.</p>
+  <div class="catblock" id="vitamins">
+    <div class="catblock__head reveal">
+      <div><p class="kicker">03 / Vitamins &amp; supplements</p><h3>The boost, without the splurge</h3></div>
+      <div class="railnav"><button class="railbtn" data-dir="-1" aria-label="Scroll left">&#8249;</button><button class="railbtn" data-dir="1" aria-label="Scroll right">&#8250;</button></div>
     </div>
-    <div class="grid" data-cat="beverage"></div>
-  </div>
-
-  <div class="band">
-    <div class="band__head reveal">
-      <h3>Vitamins &amp; supplements</h3>
-      <p>The extra boost, without breaking the bank. Electrolytes, immune support and daily essentials.</p>
-    </div>
-    <div class="grid" data-cat="vitamin"></div>
+    <div class="rail" data-cat="vitamin"></div>
   </div>
 </section>
 
 <!-- SPECIALS -->
 <section class="specials" id="specials">
-  <div class="specials__glow" aria-hidden="true"></div>
   <div class="section-head">
     <p class="kicker reveal">This month at Simply Hydrate</p>
     <h2 class="reveal" style="--d:.1s">Save more when you stock up.</h2>
@@ -147,7 +188,7 @@
         <h3>Any 2 Designer combos</h3>
         <p>Mix any two Designer alkaline water combos and save.</p>
         <div class="offer__foot"><span class="price">R380</span>
-          <a class="btn btn--mini btn--wa" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20the%20any%202%20Designer%20combo%20for%20R380." target="_blank" rel="noopener">Claim</a>
+          <a class="btn btn--mini btn--soft" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20the%20any%202%20Designer%20combo%20for%20R380." target="_blank" rel="noopener">Claim</a>
         </div>
       </div>
     </article>
@@ -158,7 +199,7 @@
         <h3>All 3 Designer combos</h3>
         <p>The full Designer alkaline water bundle. Best price per litre we offer.</p>
         <div class="offer__foot"><span class="price">R555</span>
-          <a class="btn btn--mini btn--solid" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20all%203%20Designer%20combos%20for%20R555." target="_blank" rel="noopener">Claim deal</a>
+          <a class="btn btn--mini btn--white" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20all%203%20Designer%20combos%20for%20R555." target="_blank" rel="noopener">Claim deal</a>
         </div>
       </div>
     </article>
@@ -168,7 +209,7 @@
         <h3>Hydrade bundle</h3>
         <p>12 Hydrade Zero bottles plus 16 Fuel Bars. Sorted for the week.</p>
         <div class="offer__foot"><span class="price">R350</span>
-          <a class="btn btn--mini btn--wa" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20the%20Hydrade%20bundle%20for%20R350." target="_blank" rel="noopener">Claim</a>
+          <a class="btn btn--mini btn--soft" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20the%20Hydrade%20bundle%20for%20R350." target="_blank" rel="noopener">Claim</a>
         </div>
       </div>
     </article>
@@ -182,46 +223,25 @@
     <h2 class="reveal" style="--d:.1s">Set the whole home up for fresh water.</h2>
     <p class="section-sub reveal" style="--d:.2s">Freestanding and countertop units, refillable bottles and easy 20L refills.</p>
   </div>
-  <div class="grid grid--wide" data-cat="dispenser"></div>
+  <div class="tilegrid" data-cat="dispenser"></div>
 </section>
 
 <!-- WHY -->
 <section class="why" id="why">
-  <div class="why__bg" aria-hidden="true"></div>
-  <div class="section-head section-head--light">
+  <div class="section-head">
     <p class="kicker reveal">Why Simply Hydrate</p>
     <h2 class="reveal" style="--d:.1s">Five reasons families keep coming back.</h2>
   </div>
   <div class="why__grid">
-    <article class="feat reveal">
-      <span class="feat__no">01</span>
-      <h3>Alkaline at pH 10</h3>
-      <p>Our award winning Designer water is rich, smooth and balanced for everyday wellness.</p>
-    </article>
-    <article class="feat reveal" style="--d:.08s">
-      <span class="feat__no">02</span>
-      <h3>Certified to last</h3>
-      <p>Highly certified water with a shelf life of more than three years. Stock up with confidence.</p>
-    </article>
-    <article class="feat reveal" style="--d:.16s">
-      <span class="feat__no">03</span>
-      <h3>Kind on the budget</h3>
-      <p>Honest pricing with bulk discounts and wholesale rates for resellers.</p>
-    </article>
-    <article class="feat reveal" style="--d:.24s">
-      <span class="feat__no">04</span>
-      <h3>For the whole family</h3>
-      <p>Sugar free options approved by the Heart and Diabetic Foundation. Good choices made easy.</p>
-    </article>
-    <article class="feat reveal" style="--d:.32s">
-      <span class="feat__no">05</span>
-      <h3>Straight to your door</h3>
-      <p>Delivery available across the area. Order in seconds, we handle the heavy lifting.</p>
-    </article>
+    <article class="feat reveal"><span class="feat__no">01</span><h3>Alkaline at pH 10</h3><p>Our award winning Designer water is rich, smooth and balanced for everyday wellness.</p></article>
+    <article class="feat reveal" style="--d:.08s"><span class="feat__no">02</span><h3>Certified to last</h3><p>Highly certified water with a shelf life of more than three years. Stock up with confidence.</p></article>
+    <article class="feat reveal" style="--d:.16s"><span class="feat__no">03</span><h3>Kind on the budget</h3><p>Honest pricing with bulk discounts and wholesale rates for resellers.</p></article>
+    <article class="feat reveal" style="--d:.24s"><span class="feat__no">04</span><h3>For the whole family</h3><p>Sugar free options approved by the Heart and Diabetic Foundation. Good choices made easy.</p></article>
+    <article class="feat reveal" style="--d:.32s"><span class="feat__no">05</span><h3>Straight to your door</h3><p>Delivery available across the area. Order in seconds, we handle the heavy lifting.</p></article>
     <article class="feat feat--cta reveal" style="--d:.4s">
       <h3>Thirsty yet?</h3>
       <p>Send one message and we will sort your order today.</p>
-      <a class="btn btn--solid btn--wa" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+      <a class="btn btn--white btn--wa" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
         <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2Zm5.1 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.8-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l1.8.9c.5.2.5.4.5.6 0 .1 0 .5-.1.9Z"/></svg>
         Order on WhatsApp
       </a>
@@ -231,66 +251,62 @@
 
 <!-- CONTACT -->
 <section class="contact" id="contact">
-  <div class="contact__left">
-    <p class="kicker reveal">Get in touch</p>
-    <h2 class="reveal" style="--d:.1s">Let's get you hydrated.</h2>
-    <p class="reveal" style="--d:.2s">The fastest way to order is a WhatsApp. Tell us what you need and where you are, and we will take it from there.</p>
-    <div class="contact__actions reveal" style="--d:.3s">
-      <a class="btn btn--solid btn--wa" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
-        <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2Zm5.1 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.8-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l1.8.9c.5.2.5.4.5.6 0 .1 0 .5-.1.9Z"/></svg>
-        082 888 7397
-      </a>
-      <a class="btn btn--ghost" href="mailto:greg.simplyhydrate@gmail.com">Email us</a>
-    </div>
-    <ul class="contact__list reveal" style="--d:.4s">
-      <li><span>Phone</span><a href="tel:0828887397">082 888 7397</a></li>
-      <li><span>Email</span><a href="mailto:greg.simplyhydrate@gmail.com">greg.simplyhydrate@gmail.com</a></li>
-      <li><span>Delivery</span><b>Available, ask on WhatsApp</b></li>
-    </ul>
-  </div>
-  <div class="contact__right reveal" style="--d:.2s">
-    <div class="hours">
-      <h3>Opening hours</h3>
-      <ul>
-        <li><span>Mon</span><b>09:00 to 17:00</b></li>
-        <li><span>Tue</span><b>09:00 to 17:00</b></li>
-        <li><span>Wed</span><b>09:00 to 17:00</b></li>
-        <li><span>Thu</span><b>09:00 to 17:00</b></li>
-        <li><span>Fri</span><b>09:00 to 17:00</b></li>
-        <li><span>Sat</span><b>09:00 to 15:00</b></li>
-        <li><span>Sun</span><b>09:00 to 15:00</b></li>
+  <div class="contact__card">
+    <div class="contact__left">
+      <p class="kicker reveal">Get in touch</p>
+      <h2 class="reveal" style="--d:.1s">Let's get you hydrated.</h2>
+      <p class="reveal" style="--d:.2s">The fastest way to order is a WhatsApp. Tell us what you need and where you are, and we will take it from there.</p>
+      <div class="contact__actions reveal" style="--d:.3s">
+        <a class="btn btn--solid btn--wa" href="https://wa.me/27828887397?text=Hi%20Simply%20Hydrate%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank" rel="noopener">
+          <svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2Zm5.1 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.8-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l1.8.9c.5.2.5.4.5.6 0 .1 0 .5-.1.9Z"/></svg>
+          082 888 7397
+        </a>
+        <a class="btn btn--soft" href="mailto:greg.simplyhydrate@gmail.com">Email us</a>
+      </div>
+      <ul class="contact__list reveal" style="--d:.4s">
+        <li><span>Email</span><a href="mailto:greg.simplyhydrate@gmail.com">greg.simplyhydrate@gmail.com</a></li>
+        <li><span>Delivery</span><b>Available, ask on WhatsApp</b></li>
       </ul>
     </div>
-    <form class="signup" onsubmit="return false;">
-      <h3>Stay in the loop</h3>
-      <p>New products, sales and events. No spam, ever.</p>
-      <div class="signup__row">
-        <input type="email" placeholder="Your email address" aria-label="Your email address" />
-        <button type="submit" class="btn btn--solid">Sign up</button>
+    <div class="contact__right reveal" style="--d:.2s">
+      <div class="hours">
+        <h3>Opening hours</h3>
+        <ul>
+          <li><span>Mon to Fri</span><b>09:00 to 17:00</b></li>
+          <li><span>Saturday</span><b>09:00 to 15:00</b></li>
+          <li><span>Sunday</span><b>09:00 to 15:00</b></li>
+        </ul>
       </div>
-    </form>
+      <form class="signup" onsubmit="return false;">
+        <h3>Stay in the loop</h3>
+        <p>New products, sales and events. No spam, ever.</p>
+        <div class="signup__row">
+          <input type="email" placeholder="Your email address" aria-label="Your email address" />
+          <button type="submit" class="btn btn--solid">Sign up</button>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
+  <svg class="footer__wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60 C 240 10 480 10 720 50 C 960 90 1200 90 1440 50 L1440 0 L0 0 Z" fill="var(--paper)"/></svg>
   <div class="footer__top">
     <a class="brand brand--lg" href="#top" aria-label="Simply Hydrate home">
-      <span class="brand__drop" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 3C10 12 7 17 7 21a9 9 0 0 0 18 0c0-4-3-9-9-18z"/></svg></span>
-      <span class="brand__name">Simply<em>Hydrate</em></span>
+      <img class="brand__logo" src="assets/brand/logo-clean.png" alt="Simply Hydrate, premium family hydration" />
     </a>
     <nav class="footer__nav" aria-label="Footer">
       <a href="#range">The range</a>
+      <a href="#alkaline">pH 10</a>
       <a href="#specials">Specials</a>
       <a href="#dispensers">Dispensers</a>
-      <a href="#why">Why us</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="footer__social">
-      <!-- TODO Joshua: drop in the real Facebook / Instagram / TikTok / LinkedIn URLs -->
-      <a href="#" aria-label="Facebook" title="Facebook (add link)"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1Z"/></svg></a>
-      <a href="#" aria-label="Instagram" title="Instagram (add link)"><svg viewBox="0 0 24 24"><path d="M12 8.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Zm5-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7 4h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
-      <a href="#" aria-label="TikTok" title="TikTok (add link)"><svg viewBox="0 0 24 24"><path d="M15 4c.3 2 1.7 3.4 3.7 3.6v2.5c-1.3 0-2.6-.4-3.7-1.1v5.6a4.8 4.8 0 1 1-4.8-4.8c.3 0 .5 0 .8.1v2.6a2.2 2.2 0 1 0 1.5 2.1V4H15Z"/></svg></a>
+      <a href="https://www.facebook.com/people/Simply-Hydrate/61556471023396/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1Z"/></svg></a>
+      <a href="https://www.instagram.com/simply_hydrate" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 8.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Zm5-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM7 4h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></a>
+      <a href="https://www.tiktok.com/@greg_simply_hydrate" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24"><path d="M15 4c.3 2 1.7 3.4 3.7 3.6v2.5c-1.3 0-2.6-.4-3.7-1.1v5.6a4.8 4.8 0 1 1-4.8-4.8c.3 0 .5 0 .8.1v2.6a2.2 2.2 0 1 0 1.5 2.1V4H15Z"/></svg></a>
       <a href="https://wa.me/27828887397" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2Zm5.1 14.1c-.2.6-1.2 1.2-1.7 1.2-.4 0-1 .1-3.2-.8-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.2.1.4.1.6-.1l.9-1c.2-.2.4-.2.6-.1l1.8.9c.5.2.5.4.5.6 0 .1 0 .5-.1.9Z"/></svg></a>
     </div>
   </div>
