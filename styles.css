@@ -369,7 +369,10 @@ section{padding:clamp(56px,8vw,110px) clamp(18px,4vw,44px)}
 .contact__list a:hover{color:var(--cyan)}
 .contact__right{padding:clamp(30px,4vw,54px);background:rgba(255,255,255,.04);display:flex;flex-direction:column;gap:26px}
 .hours h3,.signup h3{font-family:var(--f-display);font-size:1.2rem;color:#fff;margin:0}
+.hours__block{margin-top:16px}
+.hours__label{font-family:var(--f-display);font-weight:600;font-size:.8rem;color:#C4B5FD;text-transform:uppercase;letter-spacing:.08em;margin:0}
 .hours ul{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-direction:column;gap:10px}
+.hours__block ul{margin-top:9px}
 .hours li{display:flex;justify-content:space-between;color:#CFC9EC;border-bottom:1px dashed rgba(255,255,255,.12);padding-bottom:10px}
 .hours b{color:#fff;font-family:var(--f-display)}
 .signup p{color:#CFC9EC;margin:8px 0 0;font-size:.94rem}
