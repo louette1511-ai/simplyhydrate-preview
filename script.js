@@ -50,22 +50,50 @@ var CONFIG = {
     }
   });
 
-  // --- Packages: opening special vs standard rate toggle ---
-  var toggle = document.querySelector(".pkg-toggle");
-  if (toggle) {
-    toggle.addEventListener("click", function (e) {
-      var btn = e.target.closest("button");
-      if (!btn) return;
-      var rate = btn.getAttribute("data-rate");
-      toggle.querySelectorAll("button").forEach(function (b) { b.classList.toggle("on", b === btn); });
-      document.querySelectorAll(".pkg__amt").forEach(function (amt) {
-        var val = amt.getAttribute("data-" + rate);
-        if (val) amt.textContent = val;
-      });
-      document.querySelectorAll(".pkg__was [data-show]").forEach(function (s) {
-        s.hidden = s.getAttribute("data-show") !== rate;
-      });
+  // --- Quote builder ---
+  var qbForm = document.getElementById("qbForm");
+  var qbTotal = document.getElementById("qbTotal");
+  var qbLines = document.getElementById("qbLines");
+  var qbSend = document.getElementById("qbSend");
+
+  function fmt(n) { return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
+
+  function stripTags(s) { return s.replace(/&times;/g, "x").replace(/&amp;/g, "&"); }
+
+  function updateQuote() {
+    if (!qbForm) return;
+    var total = 0;
+    var picks = [];
+
+    var freq = qbForm.querySelector('input[name="freq"]:checked');
+    if (freq) {
+      total += parseInt(freq.value, 10);
+      picks.push({ label: stripTags(freq.getAttribute("data-label")), amt: parseInt(freq.value, 10) });
+    }
+    qbForm.querySelectorAll('input[type="checkbox"]:checked').forEach(function (cb) {
+      total += parseInt(cb.value, 10);
+      picks.push({ label: stripTags(cb.getAttribute("data-label")), amt: parseInt(cb.value, 10) });
     });
+
+    if (qbTotal) qbTotal.textContent = fmt(total);
+    if (qbLines) {
+      qbLines.innerHTML = picks.map(function (p) {
+        return "<li><span>" + p.label + "</span><b>R" + fmt(p.amt) + "</b></li>";
+      }).join("");
+    }
+    if (qbSend) {
+      var msg = "Hi StaHua Goodies, I'd like this package: " +
+        picks.map(function (p) { return p.label + " (R" + fmt(p.amt) + ")"; }).join(", ") +
+        ". Estimated total: R" + fmt(total) + " per month.";
+      qbSend.setAttribute("href", waLink(msg));
+      qbSend.setAttribute("target", "_blank");
+      qbSend.setAttribute("rel", "noopener");
+    }
+  }
+
+  if (qbForm) {
+    qbForm.addEventListener("change", updateQuote);
+    updateQuote();
   }
 
   // --- Count-up numbers in the hero card ---
